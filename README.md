@@ -1,4 +1,4 @@
-# Alex Kumar — Portfolio (Vite + React)
+# Pragathi Parthasarathi — Portfolio 
 
 ## Quick Start
 
@@ -9,13 +9,13 @@ npm install
 npm run dev
 ```
 
-Then open http://localhost:5173 in your browser.
+Then open http://localhost:3000 in your browser.
 
 ## Commands
 
 | Command         | Action                        |
 |-----------------|-------------------------------|
-| npm run dev     | Start dev server (localhost:5173) |
+| npm run dev     | Start dev server (localhost:3000) |
 | npm run build   | Build for production          |
 | npm run preview | Preview the production build  |
 
