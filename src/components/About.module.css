@@ -1,0 +1,16 @@
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
+.bio { color:var(--muted); line-height:1.85; margin-bottom:1.25rem; font-size:.97rem; }
+.skillsWrap { margin-top:2rem; }
+.slabel { display:block; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; font-weight:500; }
+.skillsGrid { display:grid; grid-template-columns:repeat(4,1fr); gap:.6rem; }
+.tag { background:var(--glass); border:1px solid var(--border); padding:.45rem .6rem; border-radius:var(--r-sm); font-size:.78rem; text-align:center; color:var(--muted); transition:all var(--tr); cursor:default; }
+.tag:hover { border-color:var(--border-h); color:var(--gold); background:var(--gold-dim); }
+.tl { position:relative; padding-left:1.75rem; list-style:none; }
+.tl::before { content:''; position:absolute; left:0; top:10px; bottom:0; width:1px; background:linear-gradient(to bottom,var(--gold),transparent); }
+.tlItem { position:relative; margin-bottom:2rem; display:flex; flex-direction:column; gap:.1rem; }
+.dot { position:absolute; left:-1.75rem; top:18px; width:10px; height:10px; border-radius:50%; background:var(--gold); transform:translateX(-4px); border:2px solid var(--bg); box-shadow:0 0 8px rgba(232,201,122,.4); }
+.yr { font-size:.72rem; color:var(--gold); letter-spacing:.06em; }
+.role { font-family:var(--ff-display); font-size:.93rem; font-weight:700; color:var(--text); }
+.sub { font-size:.82rem; color:var(--muted); }
+@media(max-width:768px) { .grid{grid-template-columns:1fr;gap:3rem;} .skillsGrid{grid-template-columns:repeat(3,1fr);} }
+@media(max-width:480px) { .skillsGrid{grid-template-columns:repeat(2,1fr);} }

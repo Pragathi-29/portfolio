@@ -1,0 +1,103 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+:root {
+  --bg: #05060f;
+  --bg2: #0c0d1a;
+  --surface: rgba(255,255,255,0.04);
+  --glass: rgba(255,255,255,0.06);
+  --glass-h: rgba(255,255,255,0.10);
+  --border: rgba(255,255,255,0.09);
+  --border-h: rgba(232,201,122,0.35);
+  --gold: #e8c97a;
+  --gold2: #f5e0a8;
+  --gold-dim: rgba(232,201,122,0.13);
+  --accent: #7c8cf8;
+  --success: #68d391;
+  --danger: #f87171;
+  --text: #eef0f8;
+  --muted: #7a7f96;
+  --dim: #4a4f62;
+  --ff-display: 'Syne', sans-serif;
+  --ff-body: 'DM Sans', sans-serif;
+  --r-sm: 8px; --r-md: 12px; --r-lg: 16px; --r-full: 9999px;
+  --tr: 0.25s cubic-bezier(0.4,0,0.2,1);
+  --tr-slow: 0.5s cubic-bezier(0.4,0,0.2,1);
+  --sh-card: 0 8px 32px rgba(0,0,0,0.4);
+  --sh-hover: 0 24px 64px rgba(0,0,0,0.5);
+  --sh-gold: 0 0 40px rgba(232,201,122,0.12);
+}
+
+[data-theme="light"] {
+  --bg: #f0efe9; --bg2: #e8e7e0;
+  --surface: rgba(0,0,0,0.03);
+  --glass: rgba(255,255,255,0.7);
+  --glass-h: rgba(255,255,255,0.9);
+  --border: rgba(0,0,0,0.08);
+  --border-h: rgba(180,130,30,0.4);
+  --gold: #b48218; --gold2: #8a6010;
+  --gold-dim: rgba(180,130,24,0.10);
+  --text: #12131f; --muted: #5a5e72; --dim: #9094aa;
+  --sh-card: 0 8px 32px rgba(0,0,0,0.08);
+  --sh-hover: 0 24px 64px rgba(0,0,0,0.14);
+  --sh-gold: 0 0 40px rgba(180,130,24,0.08);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  transition: background var(--tr-slow), color var(--tr-slow);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+.section { padding: 7rem 0; }
+
+.section-label {
+  font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 0.75rem; font-weight: 500; display: block;
+}
+
+.section-title {
+  font-family: var(--ff-display);
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  font-weight: 700; line-height: 1.1;
+  letter-spacing: -0.025em; margin-bottom: 3.5rem;
+}
+.section-title span { color: var(--gold); }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.75rem 1.75rem; border-radius: var(--r-full);
+  font-family: var(--ff-body); font-size: 0.9rem; font-weight: 500;
+  cursor: pointer; text-decoration: none;
+  transition: all var(--tr); border: none; outline: none;
+}
+.btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+.btn-primary { background: var(--gold); color: #08090f; }
+.btn-primary:hover { background: var(--gold2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,201,122,0.25); }
+
+.btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); }
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+.tag { font-size: 0.7rem; padding: 0.22rem 0.65rem; border-radius: 6px; background: var(--surface); border: 1px solid var(--border); color: var(--muted); }
+.tag.react   { color:#61dafb; border-color:rgba(97,218,251,.25); background:rgba(97,218,251,.05); }
+.tag.node    { color:#68d391; border-color:rgba(104,211,145,.25); background:rgba(104,211,145,.05); }
+.tag.python  { color:#fbbf24; border-color:rgba(251,191,36,.25); background:rgba(251,191,36,.05); }
+.tag.ts      { color:#7c8cf8; border-color:rgba(124,140,248,.25); background:rgba(124,140,248,.05); }
+.tag.next    { color:var(--text); border-color:var(--border); }
+.tag.ml      { color:#e879f9; border-color:rgba(232,121,249,.25); background:rgba(232,121,249,.05); }
+.tag.graphql { color:#e535ab; border-color:rgba(229,53,171,.25); background:rgba(229,53,171,.05); }
+
+@media(max-width:600px){.section{padding:5rem 0;}.container{padding:0 1.25rem;}}

@@ -1,0 +1,8 @@
+.filters { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:2.75rem; }
+.btn { background:var(--glass); border:1px solid var(--border); color:var(--muted); padding:.42rem 1.1rem; border-radius:var(--r-full); cursor:pointer; font-size:.8rem; font-family:var(--ff-body); transition:all var(--tr); }
+.btn:hover { border-color:var(--border-h); color:var(--gold); }
+.btn.active { background:var(--gold); color:#08090f; border-color:var(--gold); font-weight:500; }
+.btn:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1.4rem; }
+.empty { color:var(--muted); font-size:.9rem; grid-column:1/-1; text-align:center; padding:3rem 0; }
+@media(max-width:480px) { .grid{grid-template-columns:1fr;} }
