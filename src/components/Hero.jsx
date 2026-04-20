@@ -4,7 +4,13 @@ import { motion } from 'framer-motion'
 import { useTypewriter } from '../hooks'
 import s from './Hero.module.css'
 
-const PHRASES = ['Web Developer','Open Source Contributor','Problem Solver']
+const PHRASES = [
+  'Passionate Web Developer',
+  'Clean Code Advocate',
+  'Performance Focused',
+  'User-Centric Thinker',
+  'Driven by Curiosity'
+]
 const up = (delay = 0) => ({ initial:{opacity:0,y:24}, animate:{opacity:1,y:0}, transition:{duration:.7,delay,ease:[.4,0,.2,1]} })
 
 export default function Hero() {
