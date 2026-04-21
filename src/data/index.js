@@ -18,7 +18,7 @@ export const filters = [
 
 export const experiences = [
   { id:1, role:"Senior Frontend Engineer", company:"Stripe", location:"San Francisco, CA", period:"2022 – Present", description:"Led development of Stripe's merchant dashboard, improving page load speed by 40%. Drove migration from legacy React class components to a modern hooks architecture across a 200k+ LOC codebase.", tags:["react","ts","graphql"] },
-  { id:2, role:"Web Developer", company:"Notion", location:"Remote", period:"2020 – 2022", description:"Built real-time collaborative editing features and contributed to the API platform. Reduced backend query times by 60% via query optimisation and strategic Redis caching.", tags:["react","node","python"] },
+  { id:2, role:"Full Stack Developer", company:"Notion", location:"Remote", period:"2020 – 2022", description:"Built real-time collaborative editing features and contributed to the API platform. Reduced backend query times by 60% via query optimisation and strategic Redis caching.", tags:["react","node","python"] },
   { id:3, role:"Software Engineer", company:"Razorpay", location:"Bangalore, India", period:"2018 – 2020", description:"Developed payment gateway integrations and internal tooling for the fraud detection team. Shipped features serving 1M+ daily transactions.", tags:["react","node","python"] },
 ];
 
