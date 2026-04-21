@@ -9,6 +9,7 @@ const MAP = {
   node: 'Node.js',
   python: 'Python',
   next: 'Next.js',
+  js: 'JavaScript',
 };
 
 export default function Experience() {

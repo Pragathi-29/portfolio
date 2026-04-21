@@ -20,8 +20,8 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        {/* <Projects />
-        <Experience /> */}
+        {/* <Projects />*/
+        <Experience />}
         <Contact />
       </main>
       <Footer />
